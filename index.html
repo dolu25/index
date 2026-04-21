@@ -14,7 +14,7 @@ h1 { text-align: center; padding: 15px; margin: 0; background: #0a1050; color: w
 .tab { display: none; padding: 20px; max-width: 1200px; margin: 20px auto; background: white; border-radius: 10px; }
 .active { display: block; }
 button { padding: 6px 12px; background: #0a1050; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 3px; }
-button.danger { background: #dc3545; }
+button.danger { background: #0a1050; }
 input { padding: 6px; margin: 3px; border: 1px solid #ccc; border-radius: 5px; }
 table { width: 100%; border-collapse: collapse; margin-top: 10px; }
 th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
@@ -279,7 +279,7 @@ function drawCharts() {
     if(chart3) chart3.destroy();
     
     chart1 = new Chart(document.getElementById('avgChart'), {type:'bar', data:{labels:['Русский','Математика','Информатика'], datasets:[{label:'Средний балл', data:[avgRus,avgMath,avgInf], backgroundColor:'#0a1050'}]}});
-    chart2 = new Chart(document.getElementById('distChart'), {type:'bar', data:{labels:['2','3','4','5'], datasets:[{label:'Количество оценок', data:[cnt[2],cnt[3],cnt[4],cnt[5]], backgroundColor:'#ffc107'}]}});
+    chart2 = new Chart(document.getElementById('distChart'), {type:'bar', data:{labels:['2','3','4','5'], datasets:[{label:'Количество оценок', data:[cnt[2],cnt[3],cnt[4],cnt[5]], backgroundColor:'#0a1050'}]}});
 }
 
 function openTab(name) {
